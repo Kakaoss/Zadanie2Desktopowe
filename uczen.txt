@@ -1,0 +1,6 @@
+IdUcznia;Imie;Nazwisko;Klasa
+001;Mariusz;Koprowski;3e
+002;Maciej;Machol;3a
+003;Nikodem;Janczynski;3e
+004;Julia;Sachse;4d
+005;Leon;Markowiak;1e
