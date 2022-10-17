@@ -18,6 +18,7 @@ namespace Zadanie2Desktopowe
         public Image obr4 = Image.FromFile(@"C:\Users\student\source\repos\Zadanie2Desktopowe\4.png");
         public Image obr5 = Image.FromFile(@"C:\Users\student\source\repos\Zadanie2Desktopowe\5.png");
         public Image obr6 = Image.FromFile(@"C:\Users\student\source\repos\Zadanie2Desktopowe\6.png");
+        public string textobr;
         public Form1()
         {
             InitializeComponent();
@@ -25,26 +26,32 @@ namespace Zadanie2Desktopowe
         private void losowanie_obrazka()
         {
             Random generator = new Random();
-            int a = generator.Next(1, 6);
+            int a = generator.Next(1, 7);
             switch (a)
             {
                 case 1:
                     pictureBox1.Image = obr1;
+                    textobr = "mxyxw";
                     break;
                 case 2:
                     pictureBox1.Image = obr2;
+                    textobr = "b5nmm";
                     break;
                 case 3:
                     pictureBox1.Image = obr3;
+                    textobr = "74853";
                     break;
                 case 4:
                     pictureBox1.Image = obr4;
+                    textobr = "cg5dd";
                     break;
                 case 5:
                     pictureBox1.Image = obr5;
+                    textobr = "x3deb";
                     break;
                 case 6:
                     pictureBox1.Image = obr6;
+                    textobr = "befhd";
                     break;
                 default:
                     break;
@@ -57,41 +64,19 @@ namespace Zadanie2Desktopowe
             var popr_haslo = "Qwerty1@34";
             var nazwa = textBox1.Text;
             var haslo = textBox2.Text;
-            var textobr = "";
-            if(pictureBox1.Image == obr1)
-            {
-                textobr = "mxyxw";
-            }
-            if (pictureBox1.Image == obr2)
-            {
-                textobr = "b5nmm";
-            }
-            if (pictureBox1.Image == obr3)
-            {
-                textobr = "74853";
-            }
-            if (pictureBox1.Image == obr4)
-            {
-                textobr = "cg5dd";
-            }
-            if (pictureBox1.Image == obr5)
-            {
-                textobr = "x3deb";
-            }
-            if (pictureBox1.Image == obr6)
-            {
-                textobr = "befhd";
-            }
 
             if(nazwa == popr_nazwa)
             {
                 if(haslo == popr_haslo)
                 {
+                    if ()
+                    {
 
+                    }
                 }
                 else
                 {
-                    MessageBox.Show("Nie poprawne hasloo");
+                    MessageBox.Show("Nie poprawne haslo");
                 }
             }
             else
