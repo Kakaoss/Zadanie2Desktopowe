@@ -12,12 +12,12 @@ namespace Zadanie2Desktopowe
 {
     public partial class Form1 : Form
     {
-        public Image obr1 = Image.FromFile(@"C:\Users\student\source\repos\Zadanie2Desktopowe\1.png");
-        public Image obr2 = Image.FromFile(@"C:\Users\student\source\repos\Zadanie2Desktopowe\2.png");
-        public Image obr3 = Image.FromFile(@"C:\Users\student\source\repos\Zadanie2Desktopowe\3.png");
-        public Image obr4 = Image.FromFile(@"C:\Users\student\source\repos\Zadanie2Desktopowe\4.png");
-        public Image obr5 = Image.FromFile(@"C:\Users\student\source\repos\Zadanie2Desktopowe\5.png");
-        public Image obr6 = Image.FromFile(@"C:\Users\student\source\repos\Zadanie2Desktopowe\6.png");
+        public Image obr1 = Image.FromFile(@"C:\Users\student\source\repos\Kakaoss\Zadanie2Desktopowe\1.png");
+        public Image obr2 = Image.FromFile(@"C:\Users\student\source\repos\Kakaoss\Zadanie2Desktopowe\2.png");
+        public Image obr3 = Image.FromFile(@"C:\Users\student\source\repos\Kakaoss\Zadanie2Desktopowe\3.png");
+        public Image obr4 = Image.FromFile(@"C:\Users\student\source\repos\Kakaoss\Zadanie2Desktopowe\4.png");
+        public Image obr5 = Image.FromFile(@"C:\Users\student\source\repos\Kakaoss\Zadanie2Desktopowe\5.png");
+        public Image obr6 = Image.FromFile(@"C:\Users\student\source\repos\Kakaoss\Zadanie2Desktopowe\6.png");
         public string textobr;
         public Form1()
         {
@@ -62,16 +62,25 @@ namespace Zadanie2Desktopowe
         {
             var popr_nazwa = "admin";
             var popr_haslo = "Qwerty1@34";
-            var nazwa = textBox1.Text;
-            var haslo = textBox2.Text;
-
+            var nazwa = textBox2.Text;
+            var haslo = textBox1.Text;
+            var captcha = textBox3.Text;
             if(nazwa == popr_nazwa)
             {
                 if(haslo == popr_haslo)
                 {
-                    if ()
+                    if (textobr == captcha)
                     {
-
+                        Form2 f2 = new Form2();
+                        MessageBox.Show("Poprawnie zalogowano");
+                        this.Close();
+                        f2.Show();
+                    }
+                    else
+                    {
+                        losowanie_obrazka();
+                        textBox3.Text = "";
+                        MessageBox.Show("Nie poprawnie podana captcha");
                     }
                 }
                 else
