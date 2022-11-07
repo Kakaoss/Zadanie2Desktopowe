@@ -73,8 +73,8 @@ namespace Zadanie2Desktopowe
                     {
                         Form2 f2 = new Form2();
                         MessageBox.Show("Poprawnie zalogowano");
-                        this.Close();
                         f2.Show();
+                        this.Hide();
                     }
                     else
                     {
