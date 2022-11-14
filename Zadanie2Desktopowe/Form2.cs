@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -19,7 +20,12 @@ namespace Zadanie2Desktopowe
 
         private void button1_Click(object sender, EventArgs e)
         {
+            StreamReader sr = new StreamReader("C:\\Users\\student\\source\\repos\\Kakaoss\\Zadanie2Desktopowe\\uczen.txt");
 
+            if (comboBox1.Text == "Imie")
+            {
+                
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)
