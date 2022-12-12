@@ -4,3 +4,4 @@ IdUcznia;Imie;Nazwisko;Klasa
 003;Nikodem;Janczynski;3e
 004;Julia;Sachse;4d
 005;Leon;Markowiak;1e
+006;Kornel;Tak;2a

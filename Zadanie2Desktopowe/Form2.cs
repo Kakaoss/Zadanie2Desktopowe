@@ -82,7 +82,7 @@ namespace Zadanie2Desktopowe
 
         private void button2_Click(object sender, EventArgs e)
         {
-            StreamReader sr = new StreamReader("C:\\Users\\student\\source\\repos\\Kakaoss\\Zadanie2Desktopowe\\uczen.txt");
+            
 
             var imie = textBox1.Text;
             var nazwisko = textBox2.Text;
@@ -92,6 +92,7 @@ namespace Zadanie2Desktopowe
                 MessageBox.Show("Dane musza byc uzupelnione");
             else
             {
+                StreamReader sr = new StreamReader("C:\\Users\\student\\source\\repos\\Kakaoss\\Zadanie2Desktopowe\\uczen.txt");
                 int liczba = 0;
                 string linia;
                 string id_ucznia = "";
@@ -113,7 +114,7 @@ namespace Zadanie2Desktopowe
                 }
                 sr.Close();
 
-                StreamWriter sw = new StreamWriter(@"C:\\Users\\student\\source\\repos\\Kakaoss\\Zadanie2Desktopowe\\uczen.txt");
+                StreamWriter sw = new StreamWriter(@"C:\\Users\\student\\source\\repos\\Kakaoss\\Zadanie2Desktopowe\\uczen.txt", true);
                 string do_dopisania = $"{id_ucznia};{imie};{nazwisko};{klasa}";
                 sw.Write(Environment.NewLine + do_dopisania);
                 sw.Close();
