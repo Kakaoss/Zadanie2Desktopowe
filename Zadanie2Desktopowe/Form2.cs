@@ -113,7 +113,7 @@ namespace Zadanie2Desktopowe
                 }
                 sr.Close();
 
-                StreamWriter sw = new StreamWriter(@"C:\Users\student\source\repos\Oskar621\zadanie2_desktp\asd\uczen.txt", true);
+                StreamWriter sw = new StreamWriter(@"C:\\Users\\student\\source\\repos\\Kakaoss\\Zadanie2Desktopowe\\uczen.txt");
                 string do_dopisania = $"{id_ucznia};{imie};{nazwisko};{klasa}";
                 sw.Write(Environment.NewLine + do_dopisania);
                 sw.Close();
